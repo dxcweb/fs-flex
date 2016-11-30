@@ -1,0 +1,75 @@
+.display-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex-flow (@value) {
+  -webkit-flex-flow: @value;
+  -moz-flex-flow: @value;
+  -ms-flex-flow: @value;
+  flex-flow: @value;
+}
+
+.flex(@value) {
+  -webkit-flex: @value;
+  -moz-flex: @value;
+  -ms-flex: @value;
+  flex: @value;
+}
+
+.justifyContentStart {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.justifyContentCenter {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.justifyContentEnd {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.justifyContentAround {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.justifyContentBetween {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.alignItemsStart {
+  -webkit-align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.alignItemsCenter {
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.alignItemsEnd {
+  -webkit-align-items: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}

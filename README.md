@@ -1,2 +1,15 @@
 # fs-flex
-flex布局加简写
+react版本flex简写布局
+## install
+
+```
+npm install fs-flex --save
+```
+## Development
+
+```
+npm install
+npm start
+```
+## Example
+[http://github.dxcweb.com/fs-flex/](http://github.dxcweb.com/fs-flex/ "http://github.dxcweb.com/fs-flex/")

@@ -1,0 +1,40 @@
+{
+  "name": "fs-flex",
+  "version": "0.0.1",
+  "description": "react版本flex简写布局",
+  "keywords": [
+    "react-alert",
+    "alert"
+  ],
+  "homepage": "https://github.com/dxcweb/fs-flex",
+  "maitainers": [
+    "605863278@qq.com"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dxcweb/fs-flex.git"
+  },
+  "licenses": "MIT",
+  "config": {
+    "port": 8200
+  },
+  "scripts": {
+    "build": "rc-tools run build",
+    "start": "rc-tools run server",
+    "pub": "rc-tools run pub",
+    "up": "rc-tools run update-self"
+  },
+  "devDependencies": {
+    "rc-tools": "^5.9.3",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "dependencies": {},
+  "files": [
+    "assets",
+    "examples",
+    "lib",
+    "src"
+  ],
+  "main": "./lib"
+}
