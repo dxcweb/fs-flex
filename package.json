@@ -16,7 +16,7 @@
   },
   "licenses": "MIT",
   "config": {
-    "port": 8200
+    "port": 8203
   },
   "scripts": {
     "build": "rc-tools run build",
