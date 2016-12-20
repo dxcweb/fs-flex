@@ -1,5 +1,3 @@
-import Block from './Block'
-import '../assets/abbr.less'
-import '../assets/common.less'
+import Block from './native/Block'
 export {Block};
 export default Block;
