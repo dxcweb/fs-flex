@@ -22,14 +22,8 @@ class Horizontal extends Component {
         return (
             <div style={{padding:20}}>
                 <h1>居中</h1>
-                <Block s={modal} j="c" a="c">
-                    <Block w={240} h={240} bc="rgba(40, 40, 40, 0.75)" fc="#fff" s={{borderRadius:10}}>
-                        <Block vf>
-                            <div>123123</div>
-                            <div>3333</div>
-                        </Block>
-
-                    </Block>
+                <Block m="10px 10px">
+123123
                 </Block>
             </div>
         )
