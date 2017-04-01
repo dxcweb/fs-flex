@@ -3,10 +3,9 @@
  */
 export default function (props, className) {
     const flexStyleObj = flexStyle(props);
-    const commonObj = commonStyle(props);
     const justifyContentObj = justifyContent(props);
     const alignItemsObj = alignItems(props);
-    const newClassNameObj = {...flexStyleObj, ...commonObj, ...justifyContentObj, ...alignItemsObj};
+    const newClassNameObj = {...flexStyleObj, ...justifyContentObj, ...alignItemsObj};
 
     for (let key in newClassNameObj) {
         if (className == null || className == '') {
@@ -53,30 +52,30 @@ function justifyContent(props) {
     }
     return newClassName;
 }
-function commonStyle(props) {
-    const newClassName = {};
-    if (props.bd) {
-        newClassName.bd = true;
-        delete props.bd;
-    }
-    if (props.bdl) {
-        newClassName.bdl = true;
-        delete props.bdl;
-    }
-    if (props.bdr) {
-        newClassName.bdr = true;
-        delete props.bdr;
-    }
-    if (props.bdt) {
-        newClassName.bdt = true;
-        delete props.bdt;
-    }
-    if (props.bdb) {
-        newClassName.bdb = true;
-        delete props.bdb;
-    }
-    return newClassName;
-}
+//function commonStyle(props) {
+//    const newClassName = {};
+//    if (props.bd) {
+//        newClassName.bd = true;
+//        delete props.bd;
+//    }
+//    if (props.bdl) {
+//        newClassName.bdl = true;
+//        delete props.bdl;
+//    }
+//    if (props.bdr) {
+//        newClassName.bdr = true;
+//        delete props.bdr;
+//    }
+//    if (props.bdt) {
+//        newClassName.bdt = true;
+//        delete props.bdt;
+//    }
+//    if (props.bdb) {
+//        newClassName.bdb = true;
+//        delete props.bdb;
+//    }
+//    return newClassName;
+//}
 function flexStyle(props) {
     const newClassName = {};
     if (props.hf != null) {

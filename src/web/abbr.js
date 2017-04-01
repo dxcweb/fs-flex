@@ -2,12 +2,74 @@
  * Created by dxc on 2016/9/7.
  */
 export default function (props) {
-    props.style = {...props.style,...props.s};
+    props.style = {...props.style, ...props.s};
     delete props.s;
     baseStyle(props);
     paddingStyle(props);
     marginStyle(props);
     fontStyle(props);
+    border(props)
+}
+function border(props) {
+    if (props.bd) {
+        props.style['borderWidth'] = 1;
+        props.style['borderStyle'] = 'solid';
+        if (props.bd === true) {
+            props.style['borderColor'] = '#ddd';
+        } else {
+            props.style['borderColor'] = props.bd;
+        }
+        delete props.bd;
+    }
+    if (props.bdt) {
+        props.style['borderTopWidth'] = 1;
+        props.style['borderTopStyle'] = 'solid';
+        if (props.bdt === true) {
+            props.style['borderTopColor'] = '#ddd';
+        } else {
+            props.style['borderTopColor'] = props.bdt;
+        }
+        delete props.bdt;
+    }
+    if (props.bdb) {
+        props.style['borderBottomWidth'] = 1;
+        props.style['borderBottomStyle'] = 'solid';
+        if (props.bdb === true) {
+            props.style['borderBottomColor'] = '#ddd';
+        } else {
+            props.style['borderBottomColor'] = props.bdb;
+        }
+        delete props.bdb;
+    }
+    if (props.bdl) {
+        props.style['borderLeftWidth'] = 1;
+        props.style['borderLeftStyle'] = 'solid';
+        if (props.bdl === true) {
+            props.style['borderLeftColor'] = '#ddd';
+        } else {
+            props.style['borderLeftColor'] = props.bdl;
+        }
+        delete props.bdl;
+    }
+    if (props.bdr) {
+        props.style['borderRightWidth'] = 1;
+        props.style['borderRightStyle'] = 'solid';
+        if (props.bdr === true) {
+            props.style['borderRightColor'] = '#ddd';
+        } else {
+            props.style['borderRightColor'] = props.bdr;
+        }
+        delete props.bdr;
+    }
+
+    if (props.bdw) {
+        props.style['borderWidth'] = props.bdw;
+        delete props.bdw;
+    }
+    if (props.bds) {
+        props.style['borderStyle'] = props.bds;
+        delete props.bds;
+    }
 }
 function paddingStyle(props) {
     props.p ? props.style['padding'] = props.p : 0;
